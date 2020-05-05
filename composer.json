@@ -47,6 +47,7 @@
 	  "planet/amazon-s3-and-cloudfront-pro": "2.3.1"
   },
   "require-dev": {
+    "heroku/heroku-buildpack-php": "*",
     "squizlabs/php_codesniffer": "^3.5.4",
     "roave/security-advisories": "dev-master"
   },
