@@ -45,3 +45,37 @@ Config::define( 'AS3CF_SETTINGS', serialize( array(
     // Append a timestamped folder to path of files offloaded to bucket
     'object-versioning' => true,
 ) ) );
+
+/**
+* Configuration - Plugin: Redis
+* @url: https://wordpress.org/plugins/redis-cache/
+*/
+if (!empty(getenv('REDIS_URL'))) {
+    $env = parse_url(getenv('REDIS_URL'));
+    
+    Config::define('WP_CACHE', true);
+    Config::define('WP_REDIS_DISABLED', false);
+    Config::define('WP_REDIS_CLIENT', 'predis');
+    Config::define('WP_REDIS_SCHEME', $env['scheme']);
+    Config::define('WP_REDIS_HOST', $env['host']);
+    Config::define('WP_REDIS_PORT', $env['port']);
+    Config::define('WP_REDIS_PASSWORD', $env['pass']);
+
+    // 28 Days
+    Config::define('WP_REDIS_MAXTTL', 2419200);
+
+    unset($env);
+}
+
+/**
+ * Configuration - Plugin: Batcache
+ * @url: https://wordpress.org/plugins/batcache/
+ */
+$batcache = array(
+    'debug' => false,
+    'debug_header' => true,
+    'cache_control' => true,
+    'use_stale' => true,
+    'cache_redirects' => true,
+    'group' => 'batcache',
+);
