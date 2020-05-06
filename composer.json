@@ -36,7 +36,6 @@
   ],
   "require": {
     "php": "^7.4",
-    "ext-gd":"*",
     "ext-mbstring":"*",
     "ext-gettext": "*",
     "composer/installers": "^1.8",

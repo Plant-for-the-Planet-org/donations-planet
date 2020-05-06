@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a5b1c213abfd776ac80baca426caa316",
+    "content-hash": "1311abca0041a788d20ee2b4558cedda",
     "packages": [
         {
             "name": "composer/installers",
@@ -130,6 +130,16 @@
                 "yawik",
                 "zend",
                 "zikula"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-04-07T06:57:05+00:00"
         },
@@ -320,6 +330,214 @@
             "homepage": "https://deliciousbrains.com/wp-offload-media/"
         },
         {
+            "name": "planet/give",
+            "version": "2.6.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give/2.6.2",
+                "shasum": "6bd1058008ff4d5e639a6dc7b39a1f725b013df7"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "The most robust, flexible, and intuitive way to accept donations on WordPress.",
+            "homepage": "https://givewp.com"
+        },
+        {
+            "name": "planet/give-currency-switcher",
+            "version": "1.3.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-currency-switcher/1.3.5",
+                "shasum": "ad91e0f7666cfa2944ef58ce62671b5a657b3a5a"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "Provide your donors with the ability to give using currency of their choice.",
+            "homepage": "https://givewp.com/addons/currency-switcher/"
+        },
+        {
+            "name": "planet/give-fee-recovery",
+            "version": "1.7.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-fee-recovery/1.7.5",
+                "shasum": "b10e5b64ae234dfbd6969f8adf3b8115e5a3bc8e"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "Keep more of your donations by asking donor's to take care of the fees.",
+            "homepage": "https://givewp.com/addons/fee-recovery/"
+        },
+        {
+            "name": "planet/give-form-field-manager",
+            "version": "1.4.4",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-form-field-manager/1.4.4",
+                "shasum": "2c8fbe2a0ad2892e6e7ba36f9c7117c2b456b4bc"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "Easily add and control Give's form fields using an easy-to-use interface.",
+            "homepage": "https://givewp.com/addons/form-field-manager/"
+        },
+        {
+            "name": "planet/give-hook-helper-master",
+            "version": "1.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-hook-helper-master/1.0",
+                "shasum": "a8efdf9ad03faca247b908da6cc678aff18a03ad"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Ravinder Kumar",
+                "homepage": "https://ravinder.me"
+            },
+            "description": "View all hooks on screen which fired for current screen."
+        },
+        {
+            "name": "planet/give-manual-donations",
+            "version": "1.4.5",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-manual-donations/1.4.5",
+                "shasum": "7cc518647909d24cd193a69866295947f5ccaa5c"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com"
+            },
+            "description": "Provides an admin interface for manually creating donations in Give.",
+            "homepage": "https://givewp.com/addons/manual-donations/"
+        },
+        {
+            "name": "planet/give-paypal-pro",
+            "version": "1.2.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-paypal-pro/1.2.2",
+                "shasum": "d2f177df5897aa2618b08873364183ff5e04dd90"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "A payment gateway for PayPal Website Payments Pro (NVP and REST APIs) and PayPal Payments Pro (PayFlow).",
+            "homepage": "https://givewp.com/addons/paypal-pro-gateway/"
+        },
+        {
+            "name": "planet/give-pdf-receipts",
+            "version": "2.3.6",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-pdf-receipts/2.3.6",
+                "shasum": "1ac03bfcf87e657d482348b47a245b2ae9261ac4"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com"
+            },
+            "description": "Creates PDF Receipts for each donation that is downloadable via email and donation history.",
+            "homepage": "https://givewp.com/addons/pdf-receipts/"
+        },
+        {
+            "name": "planet/give-per-form-gateways",
+            "version": "1.0.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-per-form-gateways/1.0.2",
+                "shasum": "02a99f97f89fdf9a2f1e3784bd86f6b7898b5ed0"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com"
+            },
+            "description": "Choose on a per-form basis which payment gateways you would like enabled for donors.",
+            "homepage": "https://givewp.com/addons/per-form-gateways/"
+        },
+        {
+            "name": "planet/give-recurring",
+            "version": "1.9.7",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-recurring/1.9.7",
+                "shasum": "b3710cf9dfc98792cec34ca62cb7820b35990729"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com"
+            },
+            "description": "Adds support for recurring (subscription) donations to the Give donation plugin.",
+            "homepage": "https://givewp.com/addons/recurring-donations/"
+        },
+        {
+            "name": "planet/give-stripe",
+            "version": "2.2.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/give-stripe/2.2.2",
+                "shasum": "ac7c3bc7806f833ba20c055ff8521cb88756b7c0"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "GiveWP",
+                "homepage": "https://givewp.com/"
+            },
+            "description": "Adds the Stripe.com payment gateway to the available GiveWP payment methods.",
+            "homepage": "https://givewp.com/addons/stripe-gateway/"
+        },
+        {
             "name": "planet/pro",
             "version": "3.1.2",
             "dist": {
@@ -337,6 +555,25 @@
             },
             "description": "The Most Advanced Website Creator for WordPress.",
             "homepage": "http://theme.co/pro/"
+        },
+        {
+            "name": "planet/weplant-rewrite-using-classes",
+            "version": "0.0.58",
+            "dist": {
+                "type": "zip",
+                "url": "https://repository.plant-for-the-planet.org/satispress/weplant-rewrite-using-classes/0.0.58",
+                "shasum": "817dcc34c51a73bf7055fb7aa6a87188c8aa41c0"
+            },
+            "require": {
+                "composer/installers": "^1.0"
+            },
+            "type": "wordpress-plugin",
+            "authors": {
+                "name": "Plant-for-the-Planet",
+                "homepage": "http://plant-for-the-planet.org"
+            },
+            "description": "This plugin extends the Plant-for-the-Planet App and allows wordpress users to showcase their treecounter progress.",
+            "homepage": "plant-for-the-planet.org"
         },
         {
             "name": "planet/wp-offload-ses",
@@ -440,6 +677,12 @@
                 "blog",
                 "cms",
                 "wordpress"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.patreon.com/rootsdev",
+                    "type": "patreon"
+                }
             ],
             "time": "2020-03-31T20:06:05+00:00"
         },
@@ -654,6 +897,20 @@
                 "polyfill",
                 "portable"
             ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-02-27T09:26:54+00:00"
         },
         {
@@ -717,6 +974,16 @@
                 "dotenv",
                 "env",
                 "environment"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/vlucas/phpdotenv",
+                    "type": "tidelift"
+                }
             ],
             "time": "2020-05-02T14:08:57+00:00"
         },
@@ -1103,6 +1370,16 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
+            "funding": [
+                {
+                    "url": "https://github.com/Ocramius",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/roave/security-advisories",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-05-04T14:37:25+00:00"
         },
         {
@@ -1166,7 +1443,6 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.4",
-        "ext-gd": "*",
         "ext-mbstring": "*",
         "ext-gettext": "*"
     },
@@ -1175,5 +1451,6 @@
         "php": "7.4",
         "ext-gettext": "1.0",
         "ext-imagick": "7.0.7"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
