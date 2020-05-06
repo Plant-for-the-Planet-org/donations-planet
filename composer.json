@@ -78,9 +78,9 @@
         "wpackagist-plugin/redis-cache",
         "frc/batcache"
         ],
-      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","planet/amazon-s3-and-cloudfront-pro", "wpackagist-plugin/nginx-helper","wpackagist-plugin/wordfence"],
-      "web/app/plugins/{$name}/": ["type:wordpress-plugin", "wpackagist-plugin/debug-bar"],
-      "web/app/themes/{$name}/": ["type:wordpress-theme", "planet/pro"]
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "dropin-paths": {
       "web/app": [
