@@ -85,8 +85,11 @@
         "SES_SECRET": {
             "required": false,
             "description": "AWS SES Configuration"
+          },
+          "DATABASE_URL": {
+              "value": "${JAWSDB_MARIA_URL}",
+              "description": "DATABASE URL"
           }
-
     },
     "formation": {
       "web": {
