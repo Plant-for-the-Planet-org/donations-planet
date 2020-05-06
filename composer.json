@@ -35,10 +35,12 @@
     }
   ],
   "require": {
-    "php": ">=7.1",
+    "php": "^7.4",
     "ext-gd":"*",
     "ext-mbstring":"*",
+    "ext-gettext": "*",
     "composer/installers": "^1.8",
+    "koodimonni/composer-dropin-installer": "^1.2",
     "vlucas/phpdotenv": "^4.1.3",
     "oscarotero/env": "^1.2.0",
     "roots/wordpress": "5.4",
@@ -61,7 +63,12 @@
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "platform":{
+      "php": "7.4",
+      "ext-gettext": "1.0",
+      "ext-imagick":"7.0.7"
+    }
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -74,6 +81,12 @@
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin","planet/amazon-s3-and-cloudfront-pro", "wpackagist-plugin/nginx-helper","wpackagist-plugin/wordfence"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin", "wpackagist-plugin/debug-bar"],
       "web/app/themes/{$name}/": ["type:wordpress-theme", "planet/pro"]
+    },
+    "dropin-paths": {
+      "web/app": [
+      "package:wpackagist-plugin/redis-cache:includes/object-cache.php",
+      "package:frc/batcache:advanced-cache.php"
+      ]
     },
     "wordpress-install-dir": "web/wp"
   },

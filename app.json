@@ -1,0 +1,117 @@
+{
+    "name": "Bedrock Heroku",
+    "description": "Heroku deployable Bedrock Setup",
+    "keywords": [
+      "wordpress",
+      "cms",
+      "bedrock",
+      "boilerplate",
+      "composer"
+    ],
+    "website": "https://wordpress.org/",
+    "repository": "https://github.com/sarveshwarge/bedrock-heroku",
+    "success_url": "/wp/wp-admin",
+    "scripts": {
+      "postdeploy": [
+        "bin/scripts/postdeploy.sh"
+      ]
+    },
+    "stack": "heroku-18",
+    "env": {
+      "AUTH_KEY": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "SECURE_AUTH_KEY": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "LOGGED_IN_KEY": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "NONCE_KEY": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "AUTH_SALT": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "SECURE_AUTH_SALT": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "LOGGED_IN_SALT": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "NONCE_SALT": {
+        "description": "security token generated for WordPress",
+        "generator": "secret"
+      },
+      "WP_HOME": {
+        "required": false,
+        "description": "App URL"
+      },
+      "S3_API_KEY": {
+          "required": false,
+          "description": "s3 details"
+        },
+        "S3_API_SECRET": {
+          "required": false,
+          "description": "s3 details"
+        },
+        "S3_BUCKET_NAME": {
+          "required": false,
+          "description": "s3 details"
+        },
+        "S3_USE_CUSTOM_PATH": {
+          "required": false,
+          "description": "s3 details"
+        },
+        "S3_CUSTOM_PATH": {
+            "required": false,
+            "description": "s3 details"
+          },
+        "WP_ENV": {
+          "required": false,
+          "description": "wordpress env, default production"
+        },
+        "SES_KEY": {
+            "required": false,
+            "description": "AWS SES Configuration"
+          },
+        "SES_SECRET": {
+            "required": false,
+            "description": "AWS SES Configuration"
+          }
+
+    },
+    "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "addons": [
+      {
+        "plan": "jawsdb-maria:kitefin"
+      },
+      {
+        "plan": "scheduler:standard"
+      },
+      {
+        "plan": "heroku-redis:hobby-dev"
+      },
+      {
+        "plan": "papertrail:choklad"
+      }
+    ],
+    "buildpacks": [
+      {
+        "url": "https://github.com/heroku/heroku-buildpack-php"
+      }
+    ]
+}
+  

@@ -18,12 +18,12 @@ Config::define('DISALLOW_FILE_MODS', false);
 
 Config::define( 'AS3CF_SETTINGS', serialize( array(
     'provider' => 'aws',
-    'access-key-id' => 'AKIAJZDEDTY6TQQMQUUA',
-    'secret-access-key' => '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',
+    'access-key-id' => getenv('S3_API_KEY'),
+    'secret-access-key' => getenv('S3_API_SECRET'),
     // Bucket to upload files to
-    'bucket' => 'planet-test-bucket',
+    'bucket' => getenv('S3_BUCKET_NAME'),
     // Bucket region (e.g. 'us-west-1' - leave blank for default region)
-    'region' => 'us-east-2',
+    'region' => getenv('S3_REGION'),
     // Automatically copy files to bucket on upload
     'copy-to-s3' => true,
     // Rewrite file URLs to bucket
@@ -33,9 +33,9 @@ Config::define( 'AS3CF_SETTINGS', serialize( array(
     // Custom domain if 'domain' set to 'cloudfront'
     //'cloudfront' => 'cdn.exmple.com',
     // Enable object prefix, useful if you use your bucket for other files
-    'enable-object-prefix' => true,
+    'enable-object-prefix' => getenv('S3_USE_CUSTOM_PATH'),
     // Object prefix to use if 'enable-object-prefix' is 'true'
-    'object-prefix' => 'wp-fund',
+    'object-prefix' => getenv('S3_CUSTOM_PATH'),
     // Organize bucket files into YYYY/MM directories
     'use-yearmonth-folders' => true,
     // Serve files over HTTPS
