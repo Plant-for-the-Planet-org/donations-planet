@@ -52,8 +52,8 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
  * URLs
  */
 Config::define('WP_HOME', env('WP_HOME'));
-$site_url = getenv('WP_HOME').'/wp';
-Config::define('WP_SITEURL', $site_url);
+// $site_url = getenv('WP_HOME').'/wp';
+Config::define('WP_SITEURL', env('WP_SITEURL'));
 
 /**
  * Custom Content Directory
