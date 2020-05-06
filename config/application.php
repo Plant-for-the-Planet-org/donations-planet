@@ -35,7 +35,6 @@ Env::init();
 $dotenv = Dotenv\Dotenv::createImmutable($root_dir);
 if (file_exists($root_dir . '/.env')) {
     $dotenv->load();
-    $site_url = getenv('WP_HOME').'/wp';
     //putenv("WP_SITEURL=$site_url");
     $dotenv->required(['WP_HOME']);
     if (!env('JAWSDB_MARIA_URL')) {
@@ -53,6 +52,7 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
  * URLs
  */
 Config::define('WP_HOME', env('WP_HOME'));
+$site_url = getenv('WP_HOME').'/wp';
 Config::define('WP_SITEURL', $site_url);
 
 /**
