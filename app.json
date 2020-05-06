@@ -66,6 +66,10 @@
           "required": false,
           "description": "s3 details"
         },
+        "S3_REGION": {
+          "required": false,
+          "description": "s3 details"
+        },
         "S3_USE_CUSTOM_PATH": {
           "required": false,
           "description": "s3 details"
