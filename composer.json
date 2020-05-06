@@ -54,7 +54,19 @@
     "frc/batcache": "1.3-a2",
     "wpackagist-plugin/redis-cache": "1.5.7",
     "predis/predis": "1.1.1",
-    "wpackagist-plugin/debug-bar": "0.9"
+    "wpackagist-plugin/debug-bar": "0.9",
+    "planet/give-currency-switcher": "^1.3.5",
+    "planet/give": "^2.6.2",
+    "planet/give-fee-recovery": "^1.7.5",
+    "planet/give-form-field-manager": "^1.4.4",
+    "planet/give-hook-helper-master": "^1.0",
+    "planet/give-manual-donations": "^1.4.5",
+    "planet/give-paypal-pro": "^1.2.2",
+    "planet/give-pdf-receipts": "^2.3.6",
+    "planet/give-per-form-gateways": "^1.0.2",
+    "planet/give-recurring": "^1.9.7",
+    "planet/give-stripe": "^2.2.2",
+    "planet/weplant-rewrite-using-classes": "^0.0.58"
   },
   "require-dev": {
     "heroku/heroku-buildpack-php": "*",
