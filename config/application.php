@@ -36,8 +36,8 @@ $dotenv = Dotenv\Dotenv::createImmutable($root_dir);
 if (file_exists($root_dir . '/.env')) {
     $dotenv->load();
     $site_url = getenv('WP_HOME').'/wp';
-    putenv("WP_SITEURL=$site_url");
-    $dotenv->required(['WP_HOME', 'WP_SITEURL']);
+    //putenv("WP_SITEURL=$site_url");
+    $dotenv->required(['WP_HOME']);
     if (!env('JAWSDB_MARIA_URL')) {
         $dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD']);
     }
@@ -53,7 +53,7 @@ define('WP_ENV', env('WP_ENV') ?: 'production');
  * URLs
  */
 Config::define('WP_HOME', env('WP_HOME'));
-Config::define('WP_SITEURL', env('WP_SITEURL'));
+Config::define('WP_SITEURL', $site_url);
 
 /**
  * Custom Content Directory
@@ -65,10 +65,10 @@ Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_D
 /**
  * DB settings
  */
-Config::define('DB_NAME', env('DB_NAME'));
-Config::define('DB_USER', env('DB_USER'));
-Config::define('DB_PASSWORD', env('DB_PASSWORD'));
-Config::define('DB_HOST', env('DB_HOST') ?: 'localhost');
+// Config::define('DB_NAME', env('DB_NAME'));
+// Config::define('DB_USER', env('DB_USER'));
+// Config::define('DB_PASSWORD', env('DB_PASSWORD'));
+// Config::define('DB_HOST', env('DB_HOST') ?: 'localhost');
 Config::define('DB_CHARSET', 'utf8mb4');
 Config::define('DB_COLLATE', '');
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
