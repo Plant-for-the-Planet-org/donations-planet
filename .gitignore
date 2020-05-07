@@ -5,6 +5,7 @@ web/app/mu-plugins/*/
 !web/app/mu-plugins/wordfence/
 !web/app/mu-plugins/nginx-helper/
 !web/app/mu-plugins/amazon-s3-and-cloudfront-pro/
+!web/app/plugins/weplant/
 web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep

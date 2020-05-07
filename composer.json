@@ -65,7 +65,6 @@
     "planet/give-per-form-gateways": "^1.0.2",
     "planet/give-recurring": "^1.9.7",
     "planet/give-stripe": "^2.2.2",
-    "planet/weplant": "^0.0.59",
     "wpackagist-plugin/rewrite-rules-inspector": "^1.2"
   },
   "require-dev": {
