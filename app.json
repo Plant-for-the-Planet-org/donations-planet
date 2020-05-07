@@ -9,7 +9,7 @@
       "composer"
     ],
     "website": "https://wordpress.org/",
-    "repository": "https://github.com/sarveshwarge/bedrock-heroku",
+    "repository": "https://github.com/Plant-for-the-Planet-org/donations-planet",
     "success_url": "/wp/wp-admin",
     "scripts": {
       "postdeploy": [
